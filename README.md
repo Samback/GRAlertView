@@ -5,9 +5,9 @@ GRAlertView is a subclass from UIAlertView with color customization and CoreGrap
 
 ## Screenshots
 
-<img src="https://raw.github.com/goncz9/GRAlertView/master/custom_line.png" alt="GRAlertView" title="GRAlertView" style="display:block; margin: 10px auto 30px auto;" class="center">
-<img src="https://raw.github.com/goncz9/GRAlertView/master/sucess_border.png" alt="GRAlertView" title="GRAlertView" style="display:block; margin: 10px auto 30px auto;" class="center">
-<img src="https://raw.github.com/goncz9/GRAlertView/master/alert.png" alt="GRAlertView" title="GRAlertView" style="display:block; margin: 10px auto 30px auto;" class="center">
+<img src="https://raw.github.com/goncz9/GRAlertView/master/custom_line.png">
+<img src="https://raw.github.com/goncz9/GRAlertView/master/sucess_border.png">
+<img src="https://raw.github.com/goncz9/GRAlertView/master/alert.png">
 
 
 ## Features:
@@ -15,6 +15,7 @@ GRAlertView is a subclass from UIAlertView with color customization and CoreGrap
 - custom style
 - predefined styles
 - custom icon (64x64)
+- ARC compatible
 
 ## Predefinied styles:
 - `GRAlertStyleAlert` (red)
@@ -36,7 +37,7 @@ GRAlertView is a subclass from UIAlertView with color customization and CoreGrap
 ## Examples
 
 Alert with icon:
-
+``` objective-c
     GRAlertView *alert = [[GRAlertView alloc] initWithTitle:@"Alert"
                                                     message:@"Be careful!"
                                                    delegate:self
@@ -46,9 +47,9 @@ Alert with icon:
     alert.animation = GRAlertAnimationLines;    // set animation type
     [alert setImage:@"alert.png"];              // add icon image
     [alert show];
-    
+```
 Custom Alert with icon:
-
+``` objective-c
     GRAlertView *alert = [[GRAlertView alloc] initWithTitle:@"Custom Alert"
                                            message:@"Merry Christmas!"
                                           delegate:self
@@ -66,7 +67,7 @@ Custom Alert with icon:
         
         [alert setImage:@"santa.png"];
         [alert show];
-
+```
 ## License (MIT)
 Copyright (c) 2012 Robert Goncz
 
