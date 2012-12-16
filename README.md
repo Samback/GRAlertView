@@ -1,6 +1,8 @@
 GRAlertView
 ===========
 
+GRAlertView is a subclass from UIAlertView with color customization and CoreGraphics animation.
+
 ## Screenshots
 
 <img src="https://raw.github.com/goncz9/GRAlertView/master/custom_line.png" alt="GRAlertView" title="GRAlertView" style="display:block; margin: 10px auto 30px auto;" class="center">
